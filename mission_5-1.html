@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Mission_5-1</title>
+
+<style>
+.keyboard1{width:80px ; height:80px ; font-size:30px}
+.keyboard2{background-color:pink}
+.keyboard3{background-color:lightyellow}
+#result{width:242px ; height:60px ; background-color: aliceblue ; color:palevioletred ; font-size:30px}
+.keyboard2:hover{background-color:palevioletred}
+.keyboard3:hover{background-color:bisque}
+.keyboard2:active{background-color:hotpink}
+.keyboard3:active{background-color:burlywood}
+</style>
+
+</head>
+<body>
+
+          <div>
+            <input readonly id="result" type="text" value="0">
+            <button class="keyboard1 keyboard2" onclick="c_click()">C</button>
+          </div>
+          <div>
+            <button class="keyboard1 keyboard3" value="7" onclick="num_click(this.innerHTML)">7</button>
+            <button class="keyboard1 keyboard3" value="8" onclick="num_click(this.innerHTML)">8</button>
+            <button class="keyboard1 keyboard3" value="9" onclick="num_click(this.innerHTML)">9</button>
+            <button class="keyboard1 keyboard2" value="/" onclick="ope_click(this.innerHTML)">÷</button>
+          </div>
+          <div>
+            <button class="keyboard1 keyboard3" value="4" onclick="num_click(this.innerHTML)">4</button>
+            <button class="keyboard1 keyboard3" value="5" onclick="num_click(this.innerHTML)">5</button>
+            <button class="keyboard1 keyboard3" value="6" onclick="num_click(this.innerHTML)">6</button>
+            <button class="keyboard1 keyboard2" value="*" onclick="ope_click(this.innerHTML)">×</button>
+          </div>
+          <div>
+            <button class="keyboard1 keyboard3" value="1" onclick="num_click(this.innerHTML)">1</button>
+            <button class="keyboard1 keyboard3" value="2" onclick="num_click(this.innerHTML)">2</button>
+            <button class="keyboard1 keyboard3" value="3" onclick="num_click(this.innerHTML)">3</button>
+            <button class="keyboard1 keyboard2" value="-" onclick="ope_click(this.innerHTML)">-</button>
+          </div>
+          <div>
+            <button class="keyboard1 keyboard3" value="0" onclick="num_click(this.innerHTML)">0</button>
+            <button class="keyboard1 keyboard3" value="." onclick="num_click(this.innerHTML)">.</button>
+            <button class="keyboard1 keyboard2" value="=" onclick="equal_click()">=</button>
+            <button class="keyboard1 keyboard2" value="+" onclick="ope_click(this.innerHTML)">+</button>
+          </div>
+  
+    </div> 
+          
+     <script src="mission5-1.js"></script>
+
+</body>
+</html>
